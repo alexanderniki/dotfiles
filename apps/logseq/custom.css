@@ -1,4 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2");
+:root {
+  --ls-font-family: "JetBrains Mono", "Fira Code", "Exo 2", monospace;
+  --ls-font-weight: 300;
+}
+
+/* Global blockquote style */
+blockquote {
+  font-family: "Fira Code", monospace;
+}
+
+@media only screen and(max-width: 479px) {
+  /* Mobile (portrait). 479px and less */
+  :root {
+    --ls-page-text-size: 1.0em;
+  }
+  html, body {
+    line-height: 2.0;
+  }
+  blockquote {
+    font-size: var(--ls-page-text-size)!important;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  /* Mobile (landscape). From 480px and larger */
+  :root {
+    --ls-page-text-size: 0.8em;
+  }
+  blockquote {
+    font-size: 1.0em!important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* Tablet (portrait). From 768px and larger */
+  :root {
+    --ls-page-text-size: 0.8em;
+  }
+  blockquote {
+    font-size: 1.0em!important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop. From 1200px and lager */
+  :root {
+    --ls-page-text-size: 0.8em;
+  }
+  blockquote {
+    font-size: 1.0em!important;
+  }
+}@import url("https://fonts.googleapis.com/css2?family=Fira+Code");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2");
 :root {
   --ls-font-family: "JetBrains Mono", "Fira Code", "Exo 2", monospace;
